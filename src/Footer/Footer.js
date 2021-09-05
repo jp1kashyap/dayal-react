@@ -25,11 +25,11 @@ function Footer(){
                     <Col md={3} xs={12}>
                         <h5>Follow us</h5>
                         <ul className={"social"}>
-                            <li><a><FaFacebookF /></a></li>
-                            <li><a><FaInstagram /></a></li>
-                            <li><a><FaLinkedin /></a></li>
-                            <li><a><FaTwitter /></a></li>
-                            <li><a><FaYoutube /></a></li>
+                            <li><a href={"#"}><FaFacebookF /></a></li>
+                            <li><a href={"#"}><FaInstagram /></a></li>
+                            <li><a href={"#"}><FaLinkedin /></a></li>
+                            <li><a href={"#"}><FaTwitter /></a></li>
+                            <li><a href={"#"}><FaYoutube /></a></li>
                         </ul>
                     </Col>
                     <Col md={3} xs={12}>
@@ -51,14 +51,14 @@ function Footer(){
                     <Col md={8}>
                         <nav>
                             <ul>
-                                <li><a href="#" title="About us">About us</a></li>
+                                <li><a href="/" title="About us">About us</a></li>
                                 <li><a href="contact.html" title="Contact">Contact</a></li>
-                                <li><a href="#" title="Partners">Partners</a></li>
-                                <li><a href="#" title="Customer service">Customer service</a></li>
-                                <li><a href="#" title="FAQ">FAQ</a></li>
-                                <li><a href="#" title="Careers">Careers</a></li>
-                                <li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
-                                <li><a href="#" title="Privacy statement">Privacy statement</a></li>
+                                <li><a href="/" title="Partners">Partners</a></li>
+                                <li><a href="/" title="Customer service">Customer service</a></li>
+                                <li><a href="/" title="FAQ">FAQ</a></li>
+                                <li><a href="/" title="Careers">Careers</a></li>
+                                <li><a href="/" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                                <li><a href="/" title="Privacy statement">Privacy statement</a></li>
                             </ul>
                         </nav>
                     </Col>
