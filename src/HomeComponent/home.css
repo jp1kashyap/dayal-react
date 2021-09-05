@@ -1,0 +1,17 @@
+.carousel-item{
+    height: 500px !important;
+}
+.latest-offers {
+    padding: 31px 0px;
+}
+.titleBox{
+    font-size: 26px;
+    font-weight: 700;
+    color: #555555;
+    margin-bottom: 31px;
+}
+@media only screen and (max-width: 600px) {
+    .carousel-item{
+        height: 240px !important;
+    }
+}

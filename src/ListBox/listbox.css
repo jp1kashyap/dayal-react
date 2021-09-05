@@ -1,0 +1,28 @@
+.btn-outline-primary{
+    position: relative;
+    left: 28%;
+    color: #d2691e;
+    border-color: #d2691e;
+    border-radius: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #d2691e;
+    border-color: #d2691e;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.4rem 0.4rem;
+}
+.card-text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+    .col-md-3{
+        padding-top: 13px;
+    }
+}
