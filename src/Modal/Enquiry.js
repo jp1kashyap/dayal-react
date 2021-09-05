@@ -2,7 +2,7 @@ import React from "react";
 function Enquiry() {
     return(
         <>
-            Hello
+            Hello JP
         </>
     )
 }
