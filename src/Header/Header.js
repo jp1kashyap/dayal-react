@@ -25,7 +25,7 @@ function Header() {
                 <Container>
                     <Navbar.Toggle  />
                     <Navbar.Collapse className="justify-content-center">
-                        <Nav className="me-auto" className={"justify-content-center"}>
+                        <Nav className="me-auto justify-content-center" >
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/about">Contact Us</Nav.Link>
