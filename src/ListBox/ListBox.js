@@ -16,7 +16,7 @@ function ListBox() {
                     <Col md={3} key={imgKey}>
                         <Card>
                             <LazyLoad height={202} offsetVertical={305}>
-                                <Image className={"card-img-top"} alt={"Our weekly top offer"} variant="top" src={img} />
+                                <Image className={"card-img-top"} alt={"Our weekly top offer"} height={202} height={305} variant="top" src={img} />
                             </LazyLoad>
                             <Card.Body>
                                 <Card.Text>Our weekly top offer</Card.Text>
