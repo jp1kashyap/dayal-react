@@ -1,5 +1,6 @@
 import React from "react";
 import {Card,Button,Col,Row,Image} from "react-bootstrap";
+import LazyLoad from 'react-lazy-load';
 import './listbox.css'
 function ListBox() {
     const images=[
@@ -14,7 +15,9 @@ function ListBox() {
                 return(
                     <Col md={3} key={imgKey}>
                         <Card>
-                            <Image className={"card-img-top"} alt={"Our weekly top offer"} variant="top" src={img} />
+                            <LazyLoad height={103} offsetVertical={154}>
+                                <Image className={"card-img-top"} alt={"Our weekly top offer"} variant="top" src={img} />
+                            </LazyLoad>
                             <Card.Body>
                                 <Card.Text>Our weekly top offer</Card.Text>
                                 <Button variant="outline-primary">Go somewhere</Button>
