@@ -1,8 +1,10 @@
-import React from "react";
-import {Container, Row, Col, InputGroup, FormControl} from "react-bootstrap";
+import React, {useState} from "react";
+import {Container, Row, Col, InputGroup, FormControl, Button} from "react-bootstrap";
 import {FaFacebookF,FaTwitter,FaInstagram,FaYoutube,FaLinkedin,FaPhoneAlt,FaEnvelope,FaMapMarkerAlt} from "react-icons/fa";
 import './footer.css'
+import Enquiry from "../Modal/Enquiry";
 function Footer(){
+    const [showEnquiry,setShowEnquiry]=useState(false);
     return(
         <div className={"footer"}>
             <Container>
@@ -25,11 +27,11 @@ function Footer(){
                     <Col md={3} xs={12}>
                         <h5>Follow us</h5>
                         <ul className={"social"}>
-                            <li><a href={"#"}><FaFacebookF /></a></li>
-                            <li><a href={"#"}><FaInstagram /></a></li>
-                            <li><a href={"#"}><FaLinkedin /></a></li>
-                            <li><a href={"#"}><FaTwitter /></a></li>
-                            <li><a href={"#"}><FaYoutube /></a></li>
+                            <li><a href={"#top"}><FaFacebookF /></a></li>
+                            <li><a href={"#top"}><FaInstagram /></a></li>
+                            <li><a href={"#top"}><FaLinkedin /></a></li>
+                            <li><a href={"#top"}><FaTwitter /></a></li>
+                            <li><a href={"#top"}><FaYoutube /></a></li>
                         </ul>
                     </Col>
                     <Col md={3} xs={12}>
@@ -40,7 +42,7 @@ function Footer(){
                                 aria-label="Recipient's username"
                                 aria-describedby="basic-addon2"
                             />
-                            <InputGroup.Text id="basic-addon2">SIGNUP</InputGroup.Text>
+                            <Button variant="outline-secondary" onClick={()=>setShowEnquiry(true)}>Button</Button>
                         </InputGroup>
                     </Col>
                 </Row>
@@ -64,6 +66,9 @@ function Footer(){
                     </Col>
                 </Row>
             </Container>
+            {showEnquiry &&
+            <Enquiry onClose={()=>setShowEnquiry(false)} />
+            }
         </div>
     )
 }

@@ -16,9 +16,17 @@ ul > li {
   list-style: none;
   position: relative;
 }
-
+.hide-desktop{
+  display: none;
+}
+.hide-phone{
+  display: block;
+}
 @media only screen and (max-width: 600px) {
   .hide-phone{
-    display: none !important;
+    display: none;
+  }
+  .hide-desktop{
+    display: block;
   }
 }

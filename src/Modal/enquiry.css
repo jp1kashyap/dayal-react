@@ -1,0 +1,46 @@
+.form-control{
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+.modal-75w {
+    width: 75%;
+    max-width:unset;
+}
+.enquiry-box{
+    border-left: 8px dotted #ccc;
+    padding-left: 46px;
+}
+.enquiry{
+    padding: 4% 34px;
+}
+.enquiry-row{
+    padding: 6px 5px;
+}
+.enquiry p{
+    font-style: oblique;
+    padding: 0px 7px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+}
+.modal-body {
+    padding: unset;
+}
+.modal-header {
+    padding: 10px 11px;
+    background-color: chocolate;
+    color: #fff;
+}
+.modal-header .btn-close{
+    color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+    .enquiry-box{
+        border-left: none;
+        padding-left: 0px;
+    }
+    .modal-75w {
+        width: 96%;
+        max-width:unset;
+    }
+}

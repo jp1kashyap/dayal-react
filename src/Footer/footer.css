@@ -33,11 +33,6 @@
     -moz-border-radius: 18px;
     border-radius: 18px;
 }
-.input-group-text{
-    border-radius: 20px;
-    background: linear-gradient(to bottom, #c1621d 0%,#d2691e 100%);
-    color: #ffffff;
-}
 ul{
     padding-left: 0rem !important;
 }
@@ -74,6 +69,15 @@ nav li a {
     color: #fff !important;
     background: #b9aca4;
     display: block;
+}
+.btn-outline-secondary{
+    -moz-border-radius-topright: 18px;
+    -moz-border-radius-bottomright: 18px;
+    -webkit-border-top-right-radius: 18px;
+    -webkit-border-bottom-right-radius: 18px;
+    background: linear-gradient(to bottom, #c1621d 0%,#d2691e 100%);
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 
