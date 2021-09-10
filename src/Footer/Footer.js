@@ -12,7 +12,7 @@ function Footer(){
                     <Col md={3} xs={12}>
                         <h5>Book Your Travel</h5>
                         <p><FaMapMarkerAlt /> : Maitri Bagh Colony, MadhoTanda Road, Pilibhit, 262001</p>
-                        <p><FaPhoneAlt /> : 9999999999</p>
+                        <p><FaPhoneAlt /> : 8077740900</p>
                         <p><FaEnvelope /> : dayaltravelspbt@gmail.com</p>
                     </Col>
                     <Col md={3} xs={12}>

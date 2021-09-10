@@ -15,7 +15,7 @@ function Header() {
                         <Col md={3} xs={9} className={"callMe"}>
                             <Row>
                                 <Col md={2} xs={2} className={"phoneBorder"} ><BiPhone /></Col>
-                                <Col md={8} xs={10}><div>24/7 Support number</div> <div>24/7 Support number</div></Col>
+                                <Col md={8} xs={10}><div>8077740900</div> <div>24/7 Support Number</div></Col>
                             </Row>
                         </Col>
                     </Row>
@@ -25,7 +25,7 @@ function Header() {
                 <Container>
                     <Navbar.Toggle  />
                     <Navbar.Collapse className="justify-content-center">
-                        <Nav className="me-auto justify-content-center" >
+                        <Nav className="justify-content-center" >
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/about">Contact Us</Nav.Link>
