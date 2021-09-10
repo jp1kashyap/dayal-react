@@ -20,13 +20,13 @@ ul > li {
   display: none;
 }
 .hide-phone{
-  display: block;
+  display: initial;
 }
 @media only screen and (max-width: 600px) {
   .hide-phone{
     display: none;
   }
   .hide-desktop{
-    display: block;
+    display: initial;
   }
 }
