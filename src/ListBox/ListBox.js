@@ -4,10 +4,10 @@ import LazyLoad from 'react-lazy-load';
 import './listbox.css'
 function ListBox() {
     const images=[
-        '/images/img1.jpg',
-        '/images/img2.jpg',
-        '/images/img3.jpg',
-        '/images/img4.jpg',
+        '/images/img1.avif',
+        '/images/img2.avif',
+        '/images/img3.avif',
+        '/images/img4.avif',
     ]
     return(
         <Row>

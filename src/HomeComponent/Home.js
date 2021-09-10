@@ -15,7 +15,7 @@ function Home() {
             <Carousel controls={false} >
                 <Carousel.Item>
                     <LazyLoad>
-                    <img className="d-block w-100" width={1520} height={1010}  src="/images/slider1.jpg" alt="First slide" />
+                    <img className="d-block w-100" width={1520} height={1010}  src="/images/slider1.avif" alt="First slide" />
                     </LazyLoad>
                     <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -24,7 +24,7 @@ function Home() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <LazyLoad>
-                    <img className="d-block w-100" width={1520} height={1010} src="/images/slider2.jpg"  alt="First slide" />
+                    <img className="d-block w-100" width={1520} height={1010} src="/images/slider2.avif"  alt="First slide" />
                     </LazyLoad>
                     <Carousel.Caption>
                         <h3>First slide label</h3>
