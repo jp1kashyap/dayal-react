@@ -3,14 +3,14 @@ import {Modal,Button,Form,Col,Row,Image} from "react-bootstrap";
 import './enquiry.css'
 import emailjs,{ init } from 'emailjs-com';
 init("user_GUNawnL65VUoUwKKmxlxK");
-function Enquiry({onClose}) {
+function Enquiry({onClose,details}) {
     const [validated, setValidated] = useState(false);
     const [emailSent,setEmailSent]=useState(false);
     const [emailError,setEmailError]=useState(false);
     let [enquiryData,setEnquiryData]=useState({
         name:'',
         phone_number:'',
-        destination:'',
+        destination:details?details.title:'',
         departure:'',
         departure_date:'',
         passengers:''
@@ -26,12 +26,14 @@ function Enquiry({onClose}) {
             event.stopPropagation();
         }
         setValidated(true);
-        emailjs.send('service_rqaipla', 'template_dnyng5f', enquiryData)
-            .then(function(response) {
-                setEmailSent(true);
-            }, function(error) {
-                setEmailError(true);
-            });
+        if(form.checkValidity()) {
+            emailjs.send('service_rqaipla', 'template_dnyng5f', enquiryData)
+                .then(function (response) {
+                    setEmailSent(true);
+                }, function (error) {
+                    setEmailError(true);
+                });
+        }
     };
 
     return(
@@ -44,8 +46,22 @@ function Enquiry({onClose}) {
                 </Modal.Header>
                 <Row className={"enquiry"}>
                     <Col md={5} className={"hide-phone"}>
-                        <p>We specialize in tours in Uttar Pradesh but are always expanding and enhancing our wide range of offers, as well as adding new and exciting tours of Uttrakhand, Delhi, Punab and Haryana.</p>
-                        <Image src={'/images/img1.jpg'} width={420} height={230}/>
+                        <p>
+                            {(details && details.description) ?
+                                <>
+                                    {details.description}
+                                </>
+                                :
+                                <>
+                                {'We specialize in tours in Uttar Pradesh but are always expanding and enhancing our wide range of offers, as well as adding new and exciting tours of Uttrakhand, Delhi, Punab and Haryana.'}
+                                </>
+                            }
+                            </p>
+                        {(details && details.image) ?
+                            <Image src={details.image} width={420} height={230}/>
+                            :
+                            <Image src={'/images/img1.jpg'} width={420} height={230}/>
+                        }
                     </Col>
                     <Col md={7} className={"enquiry-box"}>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -63,7 +79,7 @@ function Enquiry({onClose}) {
                             <Row className={"enquiry-row"}>
                                 <Form.Group as={Col} md={"6"}>
                                     <Form.Label>Where would you like to travel?</Form.Label>
-                                    <Form.Control name={"destination"} required onChange={handleChange} type={"text"} />
+                                    <Form.Control name={"destination"} required onChange={handleChange} defaultValue={enquiryData.destination} type={"text"} />
                                 </Form.Group>
                                 <Form.Group as={Col} md={"6"}>
                                     <Form.Label>What is your city of Departure?</Form.Label>

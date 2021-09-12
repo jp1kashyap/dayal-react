@@ -21,6 +21,18 @@
     font-size: 18px;
     font-weight: 400;
 }
+.carousel-item {
+    height: unset;
+}
+.carousel-control-next, .carousel-control-prev{
+    top: -48px;
+    bottom: unset;
+    color: chocolate;
+}
+.carousel-control-prev{
+    right: 50px;
+    left: unset;
+}
 @media only screen and (max-width: 600px) {
     .col-md-3{
         padding-top: 13px;

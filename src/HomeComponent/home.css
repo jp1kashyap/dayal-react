@@ -1,5 +1,5 @@
 .carousel-item{
-    height: 500px !important;
+    max-height: 500px;
 }
 .latest-offers {
     padding: 31px 0px;
@@ -12,6 +12,6 @@
 }
 @media only screen and (max-width: 600px) {
     .carousel-item{
-        height: 240px !important;
+        max-height: 240px;
     }
 }

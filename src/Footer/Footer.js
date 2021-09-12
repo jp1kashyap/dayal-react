@@ -67,7 +67,7 @@ function Footer(){
                 </Row>
             </Container>
             {showEnquiry &&
-            <Enquiry onClose={()=>setShowEnquiry(false)} />
+                <Enquiry onClose={()=>setShowEnquiry(false)} details={{title: '',img:'',description:''}} />
             }
         </div>
     )

@@ -36,22 +36,31 @@ function Home() {
             <Container >
                 {/* latest offers div*/}
                 <div className={"latest-offers"}>
-                    <div className={"titleBox"}>Explore Our Latest offers</div>
+                    <div className={"titleBox"}>Popular Tourist Destinations in Punjab</div>
                     <div className={"offers"}>
-                        <ListBox />
+                        <ListBox type={'punjab'} />
                     </div>
                 </div>
                 {/* latest offers div*/}
                 <hr/>
                 {/* top destinations offers div*/}
                 <div className={"latest-offers"}>
-                    <div className={"titleBox"}>Top Destinations We Visits</div>
+                    <div className={"titleBox"}>Best Places to Visit in Uttarakhand</div>
                     <div className={"offers"}>
-                        <ListBox />
+                        <ListBox type={'uttrakhand'} />
                     </div>
                 </div>
                 {/* top destinations div*/}
                 <hr/>
+                {/* top destinations offers div*/}
+                <div className={"latest-offers"}>
+                    <div className={"titleBox"}>Popular Tourist Destinations in Uttar Pradesh</div>
+                    <div className={"offers"}>
+                        <ListBox type={'uttar-pradesh'} />
+                    </div>
+                </div>
+                {/* top destinations div*/}
+                <hr />
                 {/*    Our promises*/}
                 <div className={"latest-offers"}>
                     <ContentBox />
