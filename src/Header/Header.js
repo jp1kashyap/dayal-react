@@ -10,7 +10,10 @@ function Header() {
                 <Container>
                     <Row>
                         <Col md={9} xs={3}>
-                            <Navbar.Brand href="#home"><AiFillCar /> <span className={"hide-phone"}>Dayal Travels</span></Navbar.Brand>
+                            <Navbar.Brand href="#home">
+                                <img src={"/images/logo.png"} height={40} width={40} />
+                                <span className={"hide-phone"}> Dayal Travels</span>
+                            </Navbar.Brand>
                         </Col>
                         <Col md={3} xs={9} className={"callMe"}>
                             <Row>
